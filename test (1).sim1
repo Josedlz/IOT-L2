@@ -1,0 +1,43 @@
+<circuit version="1.0.0-SR0" rev="1320" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="Subcircuit" CircId="Mega-1" mainComp="false" Show_id="true" Show_Val="false" Pos="872,468" rotation="0" hflip="1" vflip="1" label="Mega-1" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Logic_Symbol="false">
+<mainCompProps itemtype="MCU" CircId="1_mega2560-63" mainComp="true" Show_id="false" Show_Val="false" Pos="20,20" rotation="0" hflip="1" vflip="1" label="1_mega2560-63" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Frequency="16 MHz" Program="Blink.hex" Auto_Load="false" Rst_enabled="true" Ext_Osc="false" Wdt_enabled="false" />
+</item>
+
+<item itemtype="KeyPad" CircId="KeyPad-2" mainComp="false" Show_id="false" Show_Val="false" Pos="668,560" rotation="0" hflip="1" vflip="1" label="KeyPad-2" idLabPos="-8,-16" labelrot="0" valLabPos="-16,20" valLabRot="0" Rows="4 _Buttons" Cols="4 _Buttons" Key_Labels="123A456B789C*0#D" />
+
+<item itemtype="SR04" CircId="SR04-11" mainComp="false" Show_id="false" Show_Val="false" Pos="772,504" rotation="0" hflip="1" vflip="1" label="SR04-11" idLabPos="-16,-48" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Voltage Source" CircId="Voltage Source-22" mainComp="false" ShowProp="MaxValue" Show_id="false" Show_Val="true" Pos="648,464" rotation="0" hflip="1" vflip="1" label="Voltage Source-22" idLabPos="-32,-48" labelrot="0" valLabPos="-8,30" valLabRot="0" Running="true" Value_Volt="1.30335 V" MaxValue="3.998 V" />
+
+<item itemtype="Servo" CircId="Servo-497" mainComp="false" Show_id="true" Show_Val="false" Pos="1112,472" rotation="-180" hflip="-1" vflip="1" label="Servo-497" idLabPos="-16,-40" labelrot="0" valLabPos="-16,20" valLabRot="0" Speed="0.2 _sec/60º" Input_High_V="2.5 V" Input_Low_V="2.5 V" Input_Imped="1e+9 Ω" />
+
+<item itemtype="Connector" uid="connector-498" startpinid="Voltage Source-22-outPin" endpinid="SR04-11-inpin" pointList="676,480,684,480" />
+
+<item itemtype="Connector" uid="connector-499" startpinid="SR04-11-trigpin" endpinid="Mega-1-3" pointList="772,552,772,612,880,612" />
+
+<item itemtype="Connector" uid="connector-500" startpinid="SR04-11-outpin" endpinid="Mega-1-2" pointList="780,552,780,604,880,604" />
+
+<item itemtype="Connector" uid="connector-501" startpinid="Servo-497-in0" endpinid="Mega-1-Vin" pointList="1064,488,1048,488,1048,652,1024,652" />
+
+<item itemtype="Connector" uid="connector-502" startpinid="Servo-497-in1" endpinid="Mega-1-GND1" pointList="1064,472,1040,472,1040,660,1024,660" />
+
+<item itemtype="Connector" uid="connector-503" startpinid="Servo-497-in2" endpinid="Mega-1-31" pointList="1064,456,920,456,920,484" />
+
+<item itemtype="Connector" uid="connector-504" startpinid="KeyPad-2-Pin4" endpinid="Mega-1-11" pointList="668,632,668,684,880,684" />
+
+<item itemtype="Connector" uid="connector-505" startpinid="KeyPad-2-Pin5" endpinid="Mega-1-10" pointList="684,632,684,676,880,676" />
+
+<item itemtype="Connector" uid="connector-506" startpinid="Mega-1-9" endpinid="KeyPad-2-Pin6" pointList="880,668,700,668,700,632" />
+
+<item itemtype="Connector" uid="connector-507" startpinid="Mega-1-8" endpinid="KeyPad-2-Pin7" pointList="880,660,716,660,716,632" />
+
+<item itemtype="Connector" uid="connector-508" startpinid="Mega-1-4" endpinid="KeyPad-2-Pin0" pointList="880,620,764,620,764,568,732,568" />
+
+<item itemtype="Connector" uid="connector-509" startpinid="KeyPad-2-Pin1" endpinid="Mega-1-5" pointList="732,584,756,584,756,628,880,628" />
+
+<item itemtype="Connector" uid="connector-510" startpinid="KeyPad-2-Pin2" endpinid="Mega-1-6" pointList="732,600,748,600,748,636,880,636" />
+
+<item itemtype="Connector" uid="connector-511" startpinid="Mega-1-7" endpinid="KeyPad-2-Pin3" pointList="880,644,740,644,740,616,732,616" />
+
+</circuit>
